@@ -1,6 +1,9 @@
 import printHomePageContent from './home';
 import printMenuContent from './menu';
 import './styles.css';
+import image1 from './images/menu-image-1.jpg';
+import image2 from './images/menu-image-2.jpg';
+import image3 from './images/menu-image-3.jpg';
 
 const container = document.querySelector('#content');
 const navButtons = document.querySelectorAll('.nav-tab');
@@ -20,4 +23,5 @@ function renderPageContent (e) {
     }
 };
 
+container.appendChild(printHomePageContent());
 

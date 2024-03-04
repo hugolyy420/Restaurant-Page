@@ -23,7 +23,8 @@ body {
     background-image: url(./background-image.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
+    background-position: center center;
+    background-attachment: fixed;
     min-height: 100vh;
     position: relative;
     font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
