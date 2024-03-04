@@ -1,9 +1,9 @@
+// import printHomePageContent from './home';
 import './styles.css';
 
-function component() {
-    const element = document.createElement('div');
-    
-    return element;
-}
+const navButtons = document.querySelectorAll('.nav-tab');
 
-document.body.appendChild(component());
+const container = document.querySelector('#content');
+
+
+container.appendChild(printHomePageContent());
