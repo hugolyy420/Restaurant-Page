@@ -7,10 +7,12 @@ import image3 from './images/menu-image-3.jpg';
 
 const container = document.querySelector('#content');
 const navButtons = document.querySelectorAll('.nav-tab');
+navButtons[0].classList.add('active');
 
 for (let i = 0; i < navButtons.length; i++) {
     navButtons[i].dataset.id = i;
     navButtons[i].addEventListener('click', renderPageContent);
+    navButtons[i].addEventListener('click', changeTabFocus);
 }
 
 function renderPageContent (e) {
@@ -22,6 +24,12 @@ function renderPageContent (e) {
         container.appendChild(printMenuContent());
     }
 };
+
+function changeTabFocus (e) {
+    let activeTab = document.querySelector('.active');
+    activeTab.classList.toggle('active');
+    e.target.classList.add('active');
+}
 
 container.appendChild(printHomePageContent());
 

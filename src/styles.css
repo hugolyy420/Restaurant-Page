@@ -79,6 +79,10 @@ header {
     border-bottom: 1px solid #ffafaf;
 }
 
+.active {
+    border-bottom: 1px solid #ffafaf;
+}
+
 #content {
     display: flex;
     justify-content: center;
