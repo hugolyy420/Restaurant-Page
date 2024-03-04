@@ -1,0 +1,122 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+body {
+    background-image: url(./background-image.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    position: relative;
+    font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+body::after {
+    content: "";
+    background: url(./background-image.jpg);
+    opacity: 0.5;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1; 
+  }
+
+header {
+    background-color: rgb(65, 65, 65, 0.3);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo {
+    color: #fff;
+    font-size: 5rem;
+    padding: 0.4em;
+    line-height: 1;
+    text-align: center;
+}
+
+.logo-character-color {
+    color: #fab6b6;
+}
+
+.english-logo {
+    font-size: 2rem;
+} 
+
+.nav-tab {
+    font-size: 1rem;
+    outline: none;
+    border: 1px solid transparent;
+    color: #fff;
+    background-color: transparent;
+    padding: 0.9em;
+}
+
+.nav-tab:hover {
+    color: #ffafaf;
+    border-bottom: 1px solid #ffafaf;
+}
+
+#content {
+    display: flex;
+    justify-content: center;
+    color: #fff;
+    padding: 3em;
+}
+
+.headline{
+    text-align: center;
+}
+
+.japanese-headline {
+    font-size: 2rem;
+    margin-bottom: 0.5em;
+    border-bottom: 1px solid #fff;
+    padding-bottom: 0.5em;
+}
+
+.english-headline {
+    font-size: 1.5rem;
+    margin-bottom: 3em;
+    letter-spacing: 1.5px;
+}
+
+.homepage-image {
+    width: 20rem;
+    object-fit: cover;
+}
+
+.book-button {
+    background-color: transparent;
+    outline: none;
+    border: 1.5px solid #fff;
+    padding: 1em 1.5em;
+    color: #fff;
+    font-size: 1rem;
+    word-spacing: 3px;
+}
+
+.book-button:hover {
+    box-shadow: 3px 3px 3px rgb(255, 185, 185);
+}
