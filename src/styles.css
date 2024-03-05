@@ -147,7 +147,7 @@ header {
 }
 
 .menu-items-holder {
-    width: 70%;
+    width: clamp(200px, 50%, 50rem);
     background-color: rgba(65, 65, 65, 0.7);
     padding: 5em;
     border-radius: 10px;
@@ -179,7 +179,7 @@ header {
 }
 
 .contact-container {
-    width: max(200px, 60%);
+    width: clamp(300px, 60%, 40rem);
     background-color: rgba(65, 65, 65, 0.7);
     padding: 3em;
     border-radius: 10px;
@@ -191,7 +191,7 @@ header {
 
 .restaurant-map {
     border-radius: 10px;
-    width: max(200px, 60%);
+    width: clamp(200px, 70%, 20rem);
 }
 
 .contact-info-holder > h2 {
