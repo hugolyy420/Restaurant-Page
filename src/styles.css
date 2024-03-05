@@ -28,6 +28,7 @@ body {
     min-height: 100vh;
     position: relative;
     font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    letter-spacing: 1px;
 }
 
 body::after {
@@ -72,6 +73,7 @@ header {
     color: #fff;
     background-color: transparent;
     padding: 0.9em;
+    letter-spacing: 2px;
 }
 
 .nav-tab:hover {
@@ -161,5 +163,34 @@ header {
 }
 
 .menu-caption > div {
+    line-height: 2;
+}
+
+.contact-container {
+    width: max(200px, 60%);
+    background-color: rgba(65, 65, 65, 0.7);
+    padding: 3em;
+    border-radius: 10px;
+    display: flex;
+    gap: 3em;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.restaurant-map {
+    border-radius: 10px;
+    width: max(200px, 60%);
+}
+
+.contact-info-holder > h2 {
+    font-size: 2rem;
+    margin-bottom: 0.2em;
+}
+
+.contact-info-holder:nth-child(2) {
+    margin: 2em 0;
+}
+
+.contact-info-holder > div {
     line-height: 2;
 }
